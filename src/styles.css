@@ -1,0 +1,193 @@
+@font-face {
+    font-family: Custom;
+    src: url("./assets/fonts/Amanojaku\ Demo.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Custom2;
+    src: url("./assets/fonts/JosefinSans-Regular.ttf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Custom3;
+    src: url("./assets/fonts/JosefinSans-Bold.ttf") format("opentype");
+    font-weight: 900;
+    font-style: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    font-family: Custom2, serif;
+    --red: #BC002D;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    margin: 0;
+    margin-top: 0;
+}
+
+.main-container {
+    width: 1000px;
+    height: 100vh;
+    /* overflow: auto; */
+
+    /* background-color: blue; */
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    /* background-color: red; */
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.big {
+    font-size: 30px;
+}
+
+button {
+    font-family: custom2;
+}
+
+.logo {
+    color: var(--red);
+    font-family: custom;
+    place-items: center;
+    position: relative;
+}
+
+.logo :nth-child(1) {
+    margin: 0;
+    padding: 12px 0 0 15px;
+    padding-bottom: 12px; 
+    font-size: 30px;
+    font-weight: 900;
+    display: grid;
+    place-items: center;
+    letter-spacing: 3px;
+}
+.logo :nth-child(2) {
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+}
+
+nav {
+    justify-self: end;
+    align-self: center;
+    display: flex;
+    gap: 30px;
+    margin-right: 15px;
+    padding-left: 15px ;
+}
+
+nav button {
+    border: none;
+    background-color: white;
+    font-family: custom2;
+    font-size: 20px;
+}
+
+.active {
+    border-bottom: 1px solid var(--red);
+}
+
+#content {
+    margin-top: 30px;
+    padding: 0 15px;
+
+
+}
+
+.home-container {
+    display: grid;
+    place-items: center;
+    gap: 20px;
+}
+
+.home-image {
+    width: 80vw;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.menu-action {
+    padding: 5px 10px 0 10px;
+    font-size: 20px;
+    place-self: center;
+    height: 40px;
+}
+
+.menu-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    overflow: auto;
+}
+
+.card {
+    padding: 10px;
+}
+
+.card-image {
+    min-width: 60%;
+    margin: 0 auto 10px auto;
+}
+
+.card-image img {
+    border-radius: 10px;
+}
+
+.card-desc {
+    display: grid;
+    font-size: .9em;
+    grid-template-columns: 6fr 1fr;
+    gap: 5px;
+}
+
+.card-desc > .text {
+    border-right: 1px solid black;
+}
+.price {
+    justify-self: end;
+    align-self: center;
+    padding-right: 5px;
+}
+
+.about-container {
+    font-size: 1.5em;
+    width: 100%;
+    display: grid ;
+    place-items: center;
+    gap: 40px;
+}
+
+.about-container > div {
+    width: 430px;
+}
+
+.about-container h2 {
+    color: var(--red);
+}
+
+.disp-none {
+    display: none;
+}
