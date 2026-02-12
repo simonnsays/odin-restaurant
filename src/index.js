@@ -4,10 +4,6 @@ import { createHomePage } from "./pages/home.js"
 import { createMenuPage } from "./pages/menu.js"
 import { createAboutPage } from "./pages/about.js"
 
-// createHomePage(contentElement)
-// createMenuPage(contentElement, menuData)
-// createAboutPage(contentElement)
-
 function Page() {
     const contentElement = document.querySelector('#content')
     const header = document.querySelector('header')
@@ -16,7 +12,6 @@ function Page() {
     const aboutPage = createAboutPage(contentElement)
 
     const clearPage = () => {
-        // contentElement.innerHTML = ''
         ;[menuPage, aboutPage, homePage].forEach(el => {
             el.classList.add('disp-none')
         })
