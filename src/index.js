@@ -6,6 +6,7 @@ import { createAboutPage } from "./pages/about.js"
 
 function Page() {
     const contentElement = document.querySelector('#content')
+    console.log(contentElement)
     const header = document.querySelector('header')
     const homePage = createHomePage(contentElement)
     const menuPage = createMenuPage(contentElement, menuData)
@@ -55,4 +56,6 @@ function Page() {
     header.addEventListener('click', (e) => handlePageClick(e))
 } 
 
-Page()
+document.addEventListener('DOMContentLoaded', () => {
+    Page()
+})
